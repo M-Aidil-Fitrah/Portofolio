@@ -1,0 +1,350 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+nav {
+    background: #ffffff;
+    color: #333;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+nav .logo:hover {
+    color: #667eea;
+}
+
+nav .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav .nav-links a:hover {
+    color: #667eea;
+    transform: translateY(-3px);
+}
+
+nav .nav-links .cta-button {
+    background: #667eea;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav .nav-links .cta-button:hover {
+    background: #764ba2;
+    transform: translateY(-3px);
+}
+
+header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.about {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #667eea;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #333;
+    margin: 20px 0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #555;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.certificates {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.certificates h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.certificate-grid {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.certificate-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+
+.certificate-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover img {
+    transform: scale(1.05);
+}
+
+.certificate-info {
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .certificate-info {
+    transform: translateY(0);
+}
+
+.certificate-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.certificate-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.certificate-link {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #667eea;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.certificate-link:hover {
+    background: #764ba2;
+    transform: translateY(-3px);
+}
+
+.skills {
+    background: #f0f4f8;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.skill-bar {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skill-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.bar {
+    background: #ddd;
+    border-radius: 50px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    background: #667eea;
+    height: 100%;
+    border-radius: 50px;
+    transition: width 1s ease-in-out;
+}
+
+@keyframes load {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.skill-bar .progress {
+    animation: load 2s ease-in-out;
+}
+
+.contact {
+    padding: 60px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact .social-media a {
+    color: #667eea;
+    font-size: 36px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .social-media a:hover {
+    color: #764ba2;
+    transform: translateY(-5px);
+}
+
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+footer:hover {
+    background: #34495e;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer p:hover {
+    color: #667eea;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
